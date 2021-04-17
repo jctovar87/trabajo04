@@ -31,7 +31,7 @@ main{
 }
 
 .cuadro:nth-of-type(1){
-    background-color: #40a0a1;
+    background-color: #308c7c;
     grid-column-start: 1 ;
     grid-column-end: 3;
     grid-row-start: 1;
