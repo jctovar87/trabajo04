@@ -7,9 +7,25 @@
 }
 
 body{
-    background-color: #eee;
+    /* background-color: #eee; */
+    font-family: 'Lucida Sans';
 }
 
+.titulo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+}
+.boton{
+    margin-top: 30px;
+    justify-content: center;
+    align-content: center;
+    
+}
 .cuadros{
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
