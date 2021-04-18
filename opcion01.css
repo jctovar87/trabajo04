@@ -15,14 +15,15 @@ main{
 }
 
 .cuadros{
-    margin: 40px;
+    /* margin: 40px; */
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(5, minmax(150px, 150px));
-    grid-template-rows: repeat(3, minmax(150px, 150px));
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
     justify-content: center;
     align-content: center;
-    height: 90vh;
+    margin: 20% 20%;
+    /* height: 100%; */
 }
 
 .cuadro{
@@ -76,4 +77,17 @@ main{
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 4;
+}
+
+@media screen and (max-width: 870px){
+    .cuadros{
+        gap: 7px;
+        grid-template-columns: repeat(5, minmax(70px, 1fr));
+        grid-template-rows: repeat(3, minmax(70px, 1fr));
+
+    }
+    .cuadro{
+        /* padding: 20px; */
+        border-radius: 5px;
+    }
 }
