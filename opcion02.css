@@ -1,6 +1,6 @@
 *{
-    /* border: 0; */
-    border: 1px solid black;
+    border: 0;
+    /* border: 1px solid green; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,9 @@
 body{
     /* background-color: #eee; */
     font-family: 'Lucida Sans';
+    /* margin 0 auto;
+    width: 90%;
+    background-color: #ecebec; */
 }
 
 .titulo{
@@ -19,81 +22,86 @@ body{
 .encabezado{
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 40px auto;    
 }
 .boton{
-    margin-top: 30px;
+    margin-top: 40px;
     justify-content: center;
-    align-content: center;
+    align-content: center;  
+    border: none;
+    padding-left: 30px;
     
 }
+.boton > input{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
 .cuadros{
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     grid-template-rows: repeat(6, minmax(150px, 1fr));
+    gap: 20px;
+    
 }
 
 .cuadro{
-
+    background-color: #ecebec;
+    text-align: center;
 }
 
 .cuadro:nth-of-type(1){
-    background-color: #ecebec;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 .cuadro:nth-of-type(2){
-    background-color:  salmon;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 .cuadro:nth-of-type(3){
-    background-color: greenyellow;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 .cuadro:nth-of-type(4){
-    background-color: greenyellow;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 .cuadro:nth-of-type(5){
-    background-color: greenyellow;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
 }
 .cuadro:nth-of-type(6){
-    background-color: greenyellow;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 5;
 }
 .cuadro:nth-of-type(7){
-    background-color: hotpink;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 7;
 }
 .cuadro:nth-of-type(8){
-    background-color:  salmon;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6;
 }
 .cuadro:nth-of-type(9){
-    background-color: greenyellow;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 6;
