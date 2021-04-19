@@ -1,6 +1,6 @@
 *{
     /* border: 0; */
-    /* border: 1px solid green; */
+    border: 1px solid green;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,9 +14,9 @@ body{
 
 .cuadros{
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
-    gap: 1px;
+    grid-template-columns: repeat(4, minmax(300px, 300px));
+    grid-template-rows: repeat(3, minmax(300px, 300px));
+    /* gap: 1px; */
     margin: 5% 10%;
 }
 
@@ -179,15 +179,18 @@ body{
     justify-content: center;
     /* width: 100%; */
 }
-.cuadro6 > h4{
+.cuadro6 > div> h4{
     text-align: center;
     padding-top: 5px;
 } 
 
-.cuadro6 > h5 {
+.cuadro6 > div > h5 {
     text-align: center;
     padding-top: 20px;
     color:#93b2b2;
+}
+.item2_c6{
+
 }
 /* ----------------------------- */
 .cuadro7{
@@ -253,3 +256,62 @@ body{
     background-color: #93b2b2;
 }
 
+@media screen and (max-width: 1100px){
+    .cuadros{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 250px));
+        grid-template-rows: repeat(7, minmax(250px, 250px));
+        gap: 1px;
+        margin: 5% 10%;
+        
+    }
+    .cuadro:nth-of-type(1){
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: white;
+    }
+    .cuadro:nth-of-type(2){
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-color: #f1f6f7;
+    
+    }
+    .cuadro:nth-of-type(3){
+        grid-column: 1/3;
+        grid-row: 3/4;
+        background-color: #eb5334;
+    }
+    .cuadro:nth-of-type(4){
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-color: white;
+    }
+    .cuadro:nth-of-type(5){
+        grid-column: 1/3;
+        grid-row: 5/6;
+        background-color: #896fb9;
+    }
+    .cuadro:nth-of-type(6){
+        grid-column: 1/3;
+        grid-row: 6/7;
+        background-color: white;
+    }
+    .cuadro:nth-of-type(7){
+        grid-column: 1/3;
+        grid-row: 7/8;
+        background-color: #93b2b2;
+    }
+    .cuadro5{
+        flex-direction: row;
+    }
+    .cuadro6{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 100px auto;
+    }
+    .item2_c6{
+    display: flex;
+    flex-direction: column;
+    }
+
+}
