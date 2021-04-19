@@ -22,8 +22,8 @@ main{
     grid-template-rows: repeat(3, minmax(150px, 1fr));
     justify-content: center;
     align-content: center;
-    margin: 20% 20%;
-    /* height: 100%; */
+    margin: 10% 20%;
+    /* height: 90%; */
 }
 
 .cuadro{
